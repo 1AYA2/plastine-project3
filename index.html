@@ -1,0 +1,538 @@
+<html>
+  <head>
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/all.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+      <header>
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light text-dark fixed-top">
+                <div class="container">
+                  <a class="navbar-brand" href="#">PLastine</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Cities
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">Gaza</a></li>
+                          <li><a class="dropdown-item" href="#">Qalqilya</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Tiberias</a></li>
+                          <li><a class="dropdown-item" href="#">Negev</a></li>
+                          <li><a class="dropdown-item" href="#">Ramallah</a></li>
+                          <li><a class="dropdown-item" href="#">More...</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                      <button type="button" class="btn btn-outline-success ms-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Login
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+               <!-- Modal -->
+               <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                              <label for="exampleInputEmail1" class="form-label">Email address</label>
+                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleInputPassword1" class="form-label">Password</label>
+                              <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                <label class="form-check-label" for="flexSwitchCheckDefault">Remmember me</label>
+                              </div>
+                          </form>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Login</button>
+                    </div>
+                </div>
+              </div>
+            </div>
+              <div class="container icones">
+                <div class="position-fixed top-50 end-0 translate-middle-y mr-2">
+                  <div class="btn-group-vertical">
+                      <a href="#" class="btn btn-light"><i class="fab fa-instagram"></i></a>
+                      <a href="#" class="btn btn-light"><i class="fab fa-linkedin"></i></a>
+                      <a href="#" class="btn btn-light"><i class="fab fa-facebook"></i></a>
+                      <a href="#" class="btn btn-light"><i class="fab fa-twitter"></i></a>
+                  </div>
+              </div>
+            </div>
+        </div>
+    </header>   <!--header end  -->
+
+    <main>
+      <div class="container-fluid">
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/photo_2024-02-19_17-32-58.jpg" class="d-block w-100 h-75" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Jerusalem</h5>
+                    <p>Jerusalem is the first destination for Muslims</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="images/Flag_of_Palestine_-_short_triangle.svg.png" class="d-block w-100 h-75" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Plastine flag</h5>
+                    <p>Plastine official flag</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="images/qods.jpg" class="d-block w-100 h-75" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Jerusalem</h5>
+                    <p>Jerusalem is the first destination for Muslims</p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="alert alert-success" role="alert">
+              <h4 class="alert-heading">Palestine</h4>
+              <p>
+                The first qibla for Muslims and the second sanctuary, and it was during the ascension of our Master Muhammad to heaven and the heart of the Arab world and the owner of ancient civilization, beautiful scenery and many wealth. All of these things, and we have not talked about the Palestinian citizen yet, who is considered the true miracle in this great land.
+              </p>
+            </div>
+      </div>
+     
+  </main><!--main end  -->
+
+    <section>
+      <div class="container-fluid">
+          <span class="border border-light w-100"></span>
+          <h2 class="p-3 mb-2 bg-success text-white align-middle">Plastine Cities</h2>
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      Khan Yunis
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">one of 16 Governorates of Palestine, located in the southern Gaza Strip. Its district capital is Khan Yunis. According to the Palestinian Central Bureau of Statistics the governorate had a population of 426,056 in mid-year 2022.[2] Its land area is 69.61% urban, 12.8% rural, and 17.57% comprising the Khan Yunis refugee camp.[3]</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      Gaza
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">one of the 16 Governorates of Palestine, located in the north central Gaza Strip. Gaza is claimed by the State of Palestine, but the land is under the control of Hamas,[a] while its border with Israel, airspace and maritime territory are controlled by the IDF. According to the Palestinian Central Bureau of Statistics, the district's population was 505,700 in 2006. All of its seats were won by Hamas members in the 2006 parliamentary elections. It is governed by Mohammed Qadoura.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      Deir al-Balah
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">one of 16 Governorates of Palestine in the central Gaza Strip which is administered by Palestine aside from its border with Israel, airspace, and maritime territory. Its total land area consists of 56 sq. kilometers. According to the Palestinian Central Bureau of Statistics, in mid-year 2022 it had a population of 310,820 inhabitants distributed between eight localities.</div>
+                </div>
+              </div>
+            </div>
+      </div>
+    </section> <!--section end  -->
+
+    <section>
+      <div class="container-fluid">
+        <div class="banner p-3 mb-2">
+          <div class="overlay"></div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2 class="p-3 mb-2 bg-success text-white align-middle">Popular Destination in Plastine</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-4 col-12 mb-3">
+                <div class="card card1 h-100 shadow">
+                <img src="images/photo_2024-02-19_16-11-21.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Tulkarm</h5>
+                      <p class="card-text">
+                        Tulkarm is a city located in the western part of Palestine, specifically in the West Bank region, and this is what makes it distinguished by the nature of its land extending between plain and mountainous areas. As for its name, there are a group of historical studies around it, and they are all close to being correct, as each study has a period. Timeline was interested in learning about the history of Tulkarm</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-12 mb-3">
+              <div class="card card1 h-100 shadow">
+                <img src="images/photo_2024-02-19_16-11-24.jpg" class="card-img-top" alt="...">
+              
+                    <div class="card-body">
+                      <h5 class="card-title">The city of Qalqilya</h5>
+                      <p class="card-text">
+                        The city of Qalqilya is an Arab Islamic city located in occupied Palestine. It is a city with a long and ancient history, as it has enjoyed a great position throughout its long history, but its importance and status have decreased after it was affected by the Israeli occupation during recent decades, and it occupies Qalqilya today. A geographical area estimated at approximately 166 km2, and approximately 100,000 people live in this area.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-12 mb-3">
+              <div class="card card1 h-100 shadow">
+                <img src="images/photo_2024-02-19_16-11-26.jpg" class="card-img-top" alt="...">
+               
+                    <div class="card-body">
+                      <h5 class="card-title">Lake Tiberias</h5>
+                      <p class="card-text">
+                        Lake Tiberias is a freshwater lake located in the north of Palestine. It is surrounded by hills on all sides. Mount Erbil is located to its west, and the Syrian Golan Heights are located to its east. It is the second lowest lake in the world after the Dead Sea. It is also called the Sea of Galilee. Through it the Jordan River flows, and in the period extending between 1948 AD and 1967 AD, the lake was surrounded on its northeastern side by the ceasefire line between Syria and Israel.</p>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="col-md-6 col-lg-4 col-12 mb-3">
+              <div class="card card1 h-100 shadow">
+                <img src="images/photo_2024-02-19_16-11-43.jpg" class="card-img-top" alt="...">
+               
+                    <div class="card-body">
+                      <h5 class="card-title">Negev Desert</h5>
+                      <p class="card-text">
+                         The Negev Desert is located in the far south of the State of Palestine, where the bride extends in the southern regions to reach 14,000 square kilometers. The Negev Desert extends in the southern part of the State of Palestine from the farthest east to the farthest west, so that it is limited by sharing its borders with Jordan to the east and the Sinai Desert to the west and separates it from The Red Sea city of Eilat is from the south, and from the north, the city of Hebron is one of the closest Palestinian cities to it.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-12 mb-3">
+              <div class="card card1 h-100 shadow">
+                <img src="images/ch.jpg" class="card-img-top" alt="...">
+              
+                    <div class="card-body">
+                      <h5 class="card-title">Bethlehem</h5>
+                      <p class="card-text">
+                        The importance of the city of Bethlehem to Christians comes because of the birth of Christ, Jesus, son of Mary, in it. There are a number of churches in it, such as the Church of the Nativity, which is one of the oldest churches in the whole world, and which was built by Constantine the Great in 330 AD on a cave that Christians consider The place of the birth of Jesus Christ. Near this church there is a crypt around which there are many beliefs that it is the place where Jerome spent thirty years of his life translating the Holy Bible for Christians.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-12 mb-3">
+              <div class="card card1 h-100 shadow">
+                <img src="images/photo_2024-02-19_16-11-48.jpg" class="card-img-top" alt="...">
+             
+                    <div class="card-body">
+                      <h5 class="card-title">Ramallah</h5>
+                      <p class="card-text">
+                        Ramallah is an ancient Palestinian city located in the heart of the historic State of Palestine. It is considered the temporary administrative capital of the Palestinian Authority, in addition to being the center of Ramallah and Al-Bireh Governorate, and the district headquarters is located there, in addition to the majority of the Palestinian Authority’s ministries and offices, the general headquarters of the police and security, and the council building.</p>
+                    </div>
+                </div>
+            </div>
+
+           <div class="col-md-6 col-lg-4 col-12 mb-3">
+              <div class="card card1 h-100 shadow">
+                <img src="images/photo_2024-02-19_16-11-59.jpg" class="card-img-top" alt="...">
+             
+                    <div class="card-body">
+                      <h5 class="card-title">The Dead Sea</h5>
+                      <p class="card-text">
+                        The Dead Sea is a landlocked sea located in the southwest of the continent of Asia, bordered by Jordan to the east and Palestine to the west. The Dead Sea is considered the lowest water spot on the surface of the Earth, as it drops approximately 400 meters below sea level. The length of the Dead Sea is about 67 km. Its width at its widest point is about 18 km, and the Jordan River is considered its main tributary. The Dead Sea is distinguished by its highly saline waters and its rich mud with a high percentage of minerals of high health value.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-12 mb-3">
+              <div class="card card1 h-100 shadow">
+                <img src="images/photo_2024-02-19_16-11-15.jpg" class="card-img-top" alt="...">
+             
+                    <div class="card-body">
+                      <h5 class="card-title">The city of Bisan</h5>
+                      <p class="card-text">
+                      The city of Bisan is one of the oldest Palestinian cities, which was called in the past (Beit Shean), which means the House of Tranquility. It is a name of Canaanite origin, while the Greeks and in the Hellenistic era called it (Keolis), and there is another name given to it (Nissa). The history of this city dates back to BC, when people used to live in tents made of animal skins. In the fifth century BC, Beit Shean was under Egyptian rule, as traces of the Egyptians are still clearly visible.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </section><!--section end  -->
+
+    <section>
+      <div class="container-fluid">
+        <div class="banner p-3 mb-2">
+          <div class="overlay"></div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2 class="p-3 mb-2 bg-success text-white align-middle">Palestine before the occupation</h2>
+      <div class="container">
+        <div class="card mb-3 shadow p-3 mb-5 bg-body rounded" style="max-width:100%;">
+          <div class="row g-0">
+            <div class="col-md-4 col-12">
+                  <img src="images/photo_2024-02-19_16-09-44.jpg" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8 col-12 d-flex flex-column justify-content-between">
+                  <div class="card-body">
+                      <h5 class="card-title">The city of Lod in Palestine</h5>
+                      <p class="card-text">The city of Lod is one of the largest and oldest historical cities in Palestine, located on the side of the central Israeli occupation, specifically approximately 38 km to the northwest of the city of Jerusalem...</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+          <div class="card mb-3 shadow p-3 mb-5 bg-body rounded" style="max-width:100%;">
+            <div class="row g-0">
+              <div class="col-md-8 col-12 d-flex flex-column justify-content-between">
+                <div class="card-body">
+                  <h5 class="card-title">The City of Jerusalem</h5>
+                  <p class="card-text">
+                    The City of Jerusalem is considered one of the important civilized and holy cities. Its first landmarks were established on the Al-Duhur Hills area, which overlooks Silwan on the southeastern side of Al-Aqsa Mosque. Its geographical extension at the present time begins from the southern side of the Hebron Mountains, and the northern side of the Nablus Mountains, and reaches to The eastern side of the Mediterranean Sea, and its height above sea level reaches approximately 775 m</p>
+                </div>
+              </div>
+              <div class="col-md-4 col-12">
+                <img src="images/photo_2024-02-19_16-09-51.jpg" class="img-fluid rounded-start" alt="...">
+              </div>
+            </div>
+        </div>
+
+        <div class="card mb-3 shadow p-3 mb-5 bg-body rounded" style="max-width:100%;">
+          <div class="row g-0">
+            <div class="col-md-4 col-12">
+              <img src="images/photo_2024-02-19_16-09-53.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8 col-12 d-flex flex-column justify-content-between">
+              <div class="card-body">
+                <h5 class="card-title">The Haifa Railway</h5>
+                <p class="card-text">The Haifa Railway in Palestine in 1927, before the Israeli occupation</p>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="card mb-3 shadow p-3 mb-5 bg-body rounded" style="max-width:100%;">
+        <div class="row g-0">
+          <div class="col-md-8 col-12 d-flex flex-column justify-content-between">
+            <div class="card-body">
+              <h5 class="card-title">Palestinian police</h5>
+              <p class="card-text">
+                Rare photos of a Palestinian policeman searching a Jew at Jaffa Gate in 1929</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-12">
+            <img src="images/algish.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+        </div>
+    </div>
+
+          <div class="card mb-3 shadow p-3 mb-5 bg-body rounded" style="max-width:100%;">
+            <div class="row g-0">
+              <div class="col-md-4 col-12">
+                <img src="images/photo_2024-02-19_16-10-04.jpg" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8 col-12 d-flex flex-column justify-content-between">
+                <div class="card-body">
+                  <h5 class="card-title">The Palestinian beach of Gaza</h5>
+                  <p class="card-text">
+                    The Palestinian beach of Gaza in 1928 was one of the most beautiful beaches at that time before the Zionist occupation came and destroyed Gaza.</p>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="card mb-3 shadow p-3 mb-5 bg-body rounded" style="max-width:100%;">
+          <div class="row g-0">
+            <div class="col-md-8 col-12 d-flex flex-column justify-content-between">
+              <div class="card-body">
+                <h5 class="card-title"> Homs city</h5>
+                <p class="card-text">
+                  Homs city, public square between the old clock and the Grand Al-Nuri Mosque in 1912</p>
+              </div>
+            </div>
+            <div class="col-md-4 col-12">
+              <img src="images/photo_2024-02-19_16-10-07.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+          </div>
+      </div>
+
+      <div class="card mb-3 shadow p-3 mb-5 bg-body rounded" style="max-width:100%;">
+        <div class="row g-0">
+          <div class="col-md-4 col-12">
+            <img src="images/school.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8 col-12 d-flex flex-column justify-content-between">
+            <div class="card-body">
+              <h5 class="card-title">Hebron School</h5>
+              <p class="card-text">
+                Hebron School for the Blind in Palestine before the Zionist occupation</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3 shadow p-3 mb-5 bg-body rounded" style="max-width:100%;">
+      <div class="row g-0">
+        <div class="col-md-8 col-12 d-flex flex-column justify-content-between">
+          <div class="card-body">
+            <h5 class="card-title">Al-Aqsa Mosque</h5>
+            <p class="card-text">
+              Old photos of Friday prayers at Al-Aqsa Mosque in 1938</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-12"> <!-- Modify column class here -->
+          <img src="images/photo_2024-02-19_16-10-11.jpg" class="img-fluid rounded-start" alt="...">
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <h2 class="p-3 mb-2 bg-success text-white align-middle">Palestine after the occupation</h2>
+    <div class="container">
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/4.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/5.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/6.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/7.jpg"  class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/8.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/9.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/10.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+  </section><!--section end  -->
+
+    <section>
+        <div class="container">
+          <div class="card mb-3 shadow p-3 mb-5 bg-body rounded" style="max-width:100%;">
+              <div class="row g-0">
+                  <div class="col-md-3 mb-4">
+                      <div class="card">
+                          <div class="card-body d-flex flex-column align-items-center">
+                              <h5 class="card-title">Twitter</h5>
+                              <i class="fab fa-twitter-square icon1"></i>
+                              <a href="#" class="d-block btn  btn-success">Go somewhere</a>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="col-md-3 mb-4">
+                      <div class="card">
+                          <div class="card-body d-flex flex-column align-items-center">
+                              <h5 class="card-title">whatsapp</h5>
+                              <i class="fab fa-whatsapp-square icon1"></i>
+                              <a href="#" class="d-block  btn btn-success">Go somewhere</a>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="col-md-3 mb-4">
+                      <div class="card">
+                          <div class="card-body d-flex flex-column align-items-center">
+                              <h5 class="card-title">linkedin</h5>
+                              <i class="fab fa-linkedin icon1"></i>
+                              <a href="#" class="d-block btn  btn-success">Go somewhere</a>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="col-md-3 mb-4">
+                      <div class="card">
+                          <div class="card-body d-flex flex-column align-items-center">
+                              <h5 class="card-title">instagram</h5>
+                              <i class="fab fa-instagram-square icon1"></i>
+                              <a href="#" class="d-block btn btn-success">Go somewhere</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </section><!--section end  -->
+
+    <footer class="bg-success text-white text-center py-3">
+      <div class="container">
+        <div class=" bg-success text-white">
+          <img src="images/footer.jpg" class="card-img w-25 mx-auto" alt="...">
+      </div>
+      
+          <div class="row">
+              <div class="col-md-3">
+                  <a href="#" class="text-white">Facebook</a>
+              </div>
+              <div class="col-md-3">
+                  <a href="#" class="text-white">Instgram</a>
+              </div>
+              <div class="col-md-3">
+                  <a href="#" class="text-white">Linked In</a>
+              </div>
+              <div class="col-md-3">
+                  <a href="#" class="text-white">Twitter</a>
+              </div>
+          </div>
+      </div>
+    </footer><!--footer end  -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

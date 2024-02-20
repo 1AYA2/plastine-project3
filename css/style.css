@@ -1,0 +1,62 @@
+.icon1
+{
+    font-size:100px;
+    text-align: center;
+}
+.icones
+{
+  position: relative;
+  z-index:20
+}
+.banner
+{
+  position: relative;
+  background-image: url(../images/photo_2024-02-19_17-32-58.jpg);
+  height: 350px;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.overlay
+{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.2);
+}
+.card1 {
+  position: relative;
+  overflow: hidden;
+}
+
+.card1::before, 
+.card1::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); /* Adjust opacity as needed */
+  color: white;
+  padding: 10px;
+  opacity: 0;
+  transition: all 0.3s; 
+}
+
+.card1::before {
+  top: 0;
+  left: 0;
+  transform: translate(-100%, -100%);
+}
+
+.card1::after {
+  bottom: 0;
+  right: 0;
+  transform: translate(100%, 100%);
+}
+
+.card1:hover::before,
+.card1:hover::after {
+  opacity: 1;
+  transform: translate(0, 0);
+}
